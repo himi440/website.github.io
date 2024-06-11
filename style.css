@@ -1,0 +1,335 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    font-family:  sans-serif;
+    background-color: black;
+    color: white;
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 26px 56px;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+}
+
+header a.logo {
+    display: block;
+
+
+}
+
+header .logo svg{
+    fill: rgb(233, 16, 34);
+    height: 40px;
+}
+
+header div+div {
+    text-align: right;
+}
+
+header a.button{
+    display: inline-block;
+    background-color: rgb(240, 45, 45);
+    text-decoration: none;
+    color: aliceblue;
+    padding: 7px 17px;
+    border-radius: 3px;
+}
+
+header select{
+    background: transparent;
+    color: aliceblue;
+    padding: 6px 17px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+header div.select {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+
+div.splash {
+    position: relative;
+}
+
+
+
+div.splash div.gradient{
+    background-image: linear-gradient(to top, rgba(0,o,o));
+    position: absolute;
+    inset: 0;
+
+}
+
+
+div.splash div.background img{
+    max-width: 100%;
+    opacity: 0.6;
+
+}
+
+div.splash div.content{
+    
+    
+    position: absolute;
+    inset: 0;
+    opacity: 0.6;
+    display: grid;
+    align-items: center;
+    text-align: center;
+}
+
+
+div.splash h1, div.splash h2, div.splash h3{
+    font-weight: normal;
+}
+
+div.splash h1{
+    font-size: 3.125rem;
+    font-weight: bold;
+}
+
+div.splash h2{
+    font-size: 1.625rem;
+    margin-top: 13px;
+    margin-bottom: 29px;
+}
+
+div.splash h3{
+    font-size: 1.2rem;
+}
+
+
+div.splash form{
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    margin-top: 20px;
+    margin-right: 500px;
+    margin-left: 495px;
+    gap: 10px;
+    
+    
+    
+    
+}
+
+div.splash input{
+    padding: 10px ;
+    font-size: 1.2rem;
+    
+    
+}
+
+div.splash input ~ span{
+    position: absolute;
+    left: 12px;
+    top: 14px;
+    z-index: 3;
+    color: black;
+    transition: all 0.3s ease;
+    pointer-events: none;
+}
+
+div.splash input:focus{
+    padding-top: 14px;
+    padding-bottom: 6px;
+
+
+
+}
+
+div.splash input:focus ~ span{
+    top: 2px;
+    font-size: 8rem;
+}
+div.splash button{
+    font-size: 2.4rem;
+    padding: 6 26px;
+    background-color:red;
+    border: 0;
+    color: white;
+    cursor: pointer;
+
+    
+}
+
+section{
+   /* display: grid;
+    grid-template-columns: 1fr 1fr;*/
+    gap: 46px;
+    padding: 70px 35px;
+    align-items: center;
+    border-top: 5px solid#222;
+    display: flex;
+} 
+
+
+section div.texts h1{
+    font-size: 3.125rem;
+    margin-bottom: 8px;
+}
+
+
+section div.texts p{
+    font-size: 1.625rem;
+
+}
+.media{
+    position: relative;
+}
+.media.s1 img{
+    width: 400px;
+}
+
+.media.s1 video{
+    width: 293px;
+position: absolute;
+top:60px;
+left: 51px;
+
+}
+
+
+
+
+
+
+section div.download{
+    border: 2px solid grey;
+    border-radius: 5px;
+    padding: 10px;
+    height: 95px;
+    width: 400px;
+    display: grid;
+    grid-template-columns: max-content 1fr max-content;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    background-color: black;
+    margin-left: 160px;
+    top: 1700px;
+    gap: 15px;
+
+}
+
+section div.download img.cover{
+    height: 75px;
+    width: auto;
+
+}
+
+
+
+div.box1{
+    border: none;
+    background-color:black;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+    
+}
+
+div.box2{
+    border: none;
+    background-color:rgb(39, 36, 36);
+    margin-top: 10px
+    padding: 40px;
+    margin-bottom: 10px;
+    height: 60px;
+    width:1090px;
+
+    
+    
+}
+
+div.box3{
+    border: none;
+    background-color:rgb(39, 36, 36);
+    margin-top: 10px
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 60px;
+    
+    
+}
+
+
+div.box4{
+    border: none;
+    background-color:rgb(39, 36, 36) ;
+    margin-top: 10px
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 60px;
+    
+    
+}
+
+
+div.box5{
+    border: none;
+    background-color:rgb(39, 36, 36);
+    margin-top: 10px
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 60px;
+    
+    
+}
+
+div.box6{
+    border: none;
+    background-color:rgb(39, 36, 36);
+    margin-top: 10px
+    padding: 20px;
+    margin-bottom: 10px;
+    height: 60px;
+    
+    
+}
+
+div.box7{
+    border: none;
+    background-color:rgb(39, 36, 36);
+    margin-bottom: 10px;
+    padding: 20px;
+    margin-top: 10px;
+    height: 60px;
+    
+}
+
+footer{
+    display: flex;
+    column-gap: 20px;
+    padding: 34px;
+    cursor: pointer;
+row-gap: 100px;
+column-gap: 10px;
+
+    
+}
+
+
+ 
+
+
+
+
+
+
+
+
+
